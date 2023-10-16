@@ -1,0 +1,83 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(210, 60%, 98%);
+}
+
+img{
+    width: 45px;
+}
+
+p{
+    font-size: 1em;
+}
+
+span{
+    font-weight: 800;
+}
+
+a{
+    font-weight: 800;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 2em 1.5em 2em 1.5em;
+    gap: 2em;
+    width: 50%;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.notifications-title-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notifications-title > h1{
+    font-weight: 800;
+}
+
+.notification{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1.5em;
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 15px;
+    
+}
+
+.list-container > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.group-link > a{
+    color: hsl(219, 85%, 26%);
+}
+
+.post-link > a{
+    color: hsl(219, 12%, 42%);
+}
+
+.time-ago{
+    color: hsl(219, 14%, 63%);
+}
