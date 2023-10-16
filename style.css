@@ -7,15 +7,10 @@
     box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-}
-
-
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: hsl(210, 60%, 98%);
 }
 
@@ -38,10 +33,10 @@ a{
 .main-container{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
-    padding: 2em 1.5em 2em 1.5em;
     gap: 2em;
-    width: 50%;
+    padding: 2em 1.5em 2em 1.5em;
+    border: 1px solid red;
+    border-radius: 15px;
     background-color:  hsl(0, 0%, 100%);
 }
 
@@ -52,6 +47,12 @@ a{
 
 .notifications-title > h1{
     font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+
+.mark-all{
+    color: hsl(219, 12%, 42%)
 }
 
 .notification{
@@ -61,7 +62,29 @@ a{
     padding: 1.5em;
     background-color: hsl(210, 60%, 98%);
     border-radius: 15px;
-    
+}
+
+.notification-paragraph{
+    position: relative;
+    color: hsl(219, 12%, 42%);
+}
+
+.notification-paragraph::after{
+    content: " ";
+    position: absolute;
+    top: 40%;
+    right: -1em;
+    background-color: hsl(1, 90%, 64%);
+    padding: .250em;
+    clip-path: circle();
+}
+
+.username{
+    color: hsl(224, 21%, 14%);
+}
+
+.time-ago{
+    color: hsl(219, 14%, 63%);
 }
 
 .list-container > ul{
@@ -78,6 +101,3 @@ a{
     color: hsl(219, 12%, 42%);
 }
 
-.time-ago{
-    color: hsl(219, 14%, 63%);
-}
