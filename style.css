@@ -43,13 +43,31 @@ a{
 .notifications-title-container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.notifications-title{
+    position: relative;
+    justify-content: center;
+    gap: 1em;
+}
+
+.notifications-title::after{
+    position: absolute;
+    top: 25%;
+    right: -25%;
+    content: "3";
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    background-color: hsl(219, 85%, 26%);
+    padding: .2em .8em .2em .8em;
+    border-radius: 5px;
 }
 
 .notifications-title > h1{
     font-weight: 800;
     color: hsl(224, 21%, 14%);
 }
-
 
 .mark-all{
     color: hsl(219, 12%, 42%)
@@ -69,7 +87,7 @@ a{
     color: hsl(219, 12%, 42%);
 }
 
-.notification-paragraph::after{
+.unread::after{
     content: " ";
     position: absolute;
     top: 40%;
