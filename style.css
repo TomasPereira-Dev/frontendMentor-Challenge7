@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     display: flex;
     justify-content: center;
@@ -33,8 +34,7 @@ a{
 .main-container{
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding: 2em 1.5em 2em 1.5em;
+    padding: 2em 1.5em 0 1.5em;
     border: 1px solid red;
     border-radius: 15px;
     background-color:  hsl(0, 0%, 100%);
@@ -44,6 +44,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5em;
 }
 
 .notifications-title{
@@ -77,17 +78,22 @@ a{
     display: flex;
     align-items: center;
     gap: 1.5em;
-    padding: 1.5em;
-    background-color: hsl(210, 60%, 98%);
+    padding: 1em;
     border-radius: 15px;
+    line-height: 1.5em;
 }
 
 .notification-paragraph{
     position: relative;
     color: hsl(219, 12%, 42%);
+    max-width: 50ch;
 }
 
-.unread::after{
+.unread{
+    background-color: hsl(210, 60%, 98%);
+}
+
+.unread-dot::after{
     content: " ";
     position: absolute;
     top: 40%;
@@ -103,6 +109,18 @@ a{
 
 .time-ago{
     color: hsl(219, 14%, 63%);
+}
+
+.message-container{
+    padding: 1em;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    margin-top: .5em;
+}
+
+.message{
+    max-width: 45ch;
+    color: hsl(219, 12%, 42%);
 }
 
 .list-container > ul{
