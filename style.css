@@ -94,6 +94,17 @@ a{
     gap: 1.5em;
 }
 
+.comment-on-post-notification{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-picture{
+    position: absolute;
+    right: 6%;
+}
+
 .unread{
     background-color: hsl(210, 60%, 98%);
 }
