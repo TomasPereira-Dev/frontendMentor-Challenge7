@@ -89,6 +89,11 @@ a{
     max-width: 50ch;
 }
 
+.notification-content{
+    display: flex;
+    gap: 1.5em;
+}
+
 .unread{
     background-color: hsl(210, 60%, 98%);
 }
