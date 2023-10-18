@@ -13,6 +13,8 @@ body{
     justify-content: center;
     align-items: center;
     background-color: hsl(210, 60%, 98%);
+    min-height: 100vh;
+    padding: 3.5em;
 }
 
 img{
@@ -35,8 +37,7 @@ a{
     display: flex;
     flex-direction: column;
     padding: 2em 1.5em 0 1.5em;
-    border: 1px solid red;
-    border-radius: 15px;
+    border-radius: 1em;
     background-color:  hsl(0, 0%, 100%);
 }
 
@@ -79,7 +80,7 @@ a{
     align-items: center;
     gap: 1.5em;
     padding: 1em;
-    border-radius: 15px;
+    border-radius: 1em;
     line-height: 1.5em;
 }
 
@@ -151,5 +152,59 @@ a{
 
 .post-link > a{
     color: hsl(219, 12%, 42%);
+}
+
+@media(max-width: 375px){
+    body{
+        padding: 0;
+    }
+
+    p{
+        font-size: .8em;
+    }
+
+    img{
+        width: 35px;
+    }
+
+    .main-container{
+        padding: 1em;
+    }
+
+    .notifications-title > h1{
+        font-size: 1.5em;
+    }
+
+    .notifications-title::after{
+        top: 10%;
+    }
+
+    .notification-paragraph{
+        max-width: 25ch;
+    }
+
+    .notification{
+        line-height: 1.2;
+    }
+
+    .message-container{
+        padding: 0.8em 1.6em 0.8em 0.8em;
+    }
+
+    .message{
+        max-width: 22ch;
+    }
+
+    .comment-on-post-notification > .notification-content > .notification-text > .notification-paragraph{
+        max-width: 20ch;
+    }
+
+    .unread-dot::after{
+        position: relative;
+        top: 1px;
+        right: -0.5em;
+    }
+
+
 }
 
