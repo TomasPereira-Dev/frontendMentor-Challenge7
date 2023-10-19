@@ -21,6 +21,8 @@ img{
     width: 45px;
 }
 
+
+
 p{
     font-size: 1em;
 }
@@ -31,6 +33,19 @@ span{
 
 a{
     font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+a:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+.group-link{
+    color: hsl(219, 85%, 26%);
+}
+
+.post-link{
+    color: hsl(219, 12%, 42%);
 }
 
 .main-container{
@@ -72,7 +87,21 @@ a{
 }
 
 .mark-all{
-    color: hsl(219, 12%, 42%)
+    font-size: 1em;
+    color: hsl(219, 12%, 42%);
+    background: none;
+    border: none;
+}
+
+.mark-all:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.list-container > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .notification{
@@ -106,6 +135,12 @@ a{
     right: 6%;
 }
 
+.notification-picture > a > img:hover{
+    border: 3px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    background-color: hsl(205, 33%, 90%);
+}
+
 .unread{
     background-color: hsl(210, 60%, 98%);
 }
@@ -135,24 +170,20 @@ a{
     margin-top: .5em;
 }
 
+.message-container:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+
 .message{
     max-width: 45ch;
+}
+
+.message > a{
     color: hsl(219, 12%, 42%);
+    font-weight: 400;
 }
 
-.list-container > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
 
-.group-link > a{
-    color: hsl(219, 85%, 26%);
-}
-
-.post-link > a{
-    color: hsl(219, 12%, 42%);
-}
 
 @media(max-width: 425px){
     body{
@@ -169,6 +200,7 @@ a{
 
     .main-container{
         padding: 1em;
+        width: 100%;
     }
 
     .notifications-title > h1{
@@ -179,14 +211,17 @@ a{
         top: 10%;
     }
 
-    .notification-paragraph{
-        max-width: 25ch;
+    .mark-all{
+        font-size: 0.8em;
     }
 
     .notification{
         line-height: 1.2;
     }
 
+    .notification-paragraph{
+        max-width: 25ch;
+    }
     .message-container{
         padding: 0.8em 1.6em 0.8em 0.8em;
     }
