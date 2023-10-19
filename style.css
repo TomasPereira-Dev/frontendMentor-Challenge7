@@ -65,15 +65,12 @@ a:hover{
 
 .notifications-title{
     position: relative;
-    justify-content: center;
-    gap: 1em;
 }
 
-.notifications-title::after{
+.notifications-counter{
     position: absolute;
     top: 25%;
     right: -25%;
-    content: "3";
     color: hsl(0, 0%, 100%);
     font-weight: 800;
     background-color: hsl(219, 85%, 26%);
